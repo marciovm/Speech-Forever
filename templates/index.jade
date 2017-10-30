@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Google Speech Demo
+    link(href='/css/style.css', rel='stylesheet')
+  body         
+    div
+      br
+      div.mybuttons
+        .processing-button
+          button(type="button", disabled=true) Loading
+        .start-button
+          button(onclick="startRecording();", type="button") Start
+        .stop-button
+          button(onclick="stopRecording();", type="button") Stop
+        div
+          meter(class="volume_meter" value="0" min="0" max="10")                                    
+    div
+      br
+      textarea(class="guess" rows='4' readonly='readonly')              
+    script(src='/js/jquery-3.2.1.js')
+    script(src='/js/jquery.caret.js')
+    script(src='js/demo.js')

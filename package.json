@@ -1,0 +1,25 @@
+{
+  "name": "GoogleSpeechStreamForever",
+  "version": "0.0.1",
+  "description": "Demos browser-side transcription via Google Speech streaming recognition API, side-stepping 1 min stream limit",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "v6.10.3"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "latest",
+    "express": "4.15.4",
+    "express-session": "1.15.5",
+    "google-auth-library": "latest",
+    "jade": "latest",
+    "ws": "latest"
+  },
+  "author": "marciovm",
+  "license": "MIT",
+  "repository" :
+    { "type" : "git"
+    , "url" : "https://github.com/marciovm/Speech-Forever"
+    }
+}
