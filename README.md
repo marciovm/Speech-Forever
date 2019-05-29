@@ -10,6 +10,8 @@ This demo sidesteps the 1 min stream API limit by creating a series of streaming
 
 The view includes a volume meter for debugging audio input issues. Getting audio input right across browsers is tricky.
 
+Prompted by: https://stackoverflow.com/questions/40200220/how-to-use-streamingrecognize-for-more-than-1-minute/47024368#47024368
+
 ### Instructions
 
 **First**, base64 encode your Google .json credential file, then set the result to the env variable process.env.ENCODED.
@@ -32,3 +34,4 @@ For example, on MacOS:
 - Verified on Chrome, Firefox, Safari (v11+), and mobile Safari.
 - Safari requires https to enable getUserMedia. An nGrok tunnel provides a simple, free workaround for development.
 - On mobile Safari, note that starting the audio context must be tied to a user click event.
+
